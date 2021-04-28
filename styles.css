@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root{
+    
+    /* Primary */
+    --dark-blue: rgb(9, 11, 26);
+    --dark-desaturated-blue: rgb(27, 25, 56);
+    --soft-violet: rgb(170, 92, 219);
+    --soft-violet-a: rgba(108, 21, 161, 0.5);
+
+    /* Neutral */
+    --white: hsl(0, 0%, 100%);
+    --slightly-white-p: hsla(0, 0%, 100%, 0.75);
+    --slightly-white-h: hsla(0, 0%, 100%, 0.6);
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Inter;
+}
+
+.main-container{
+    background-color: var(--dark-blue);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*Vertical*/
+}
+
+.main-card{
+    background-color: var(--dark-desaturated-blue);
+    height: 450px;
+    max-width: 1440px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    border-radius: .5rem;
+}
+
+.main-title{
+    color: var(--white);
+    margin-top: 0;
+}
+.highlight{
+    color: var(--soft-violet);
+}
+
+.subtitle{
+    color: var(--slightly-white-p);
+    line-height: 1.7rem;
+}
+
+.stadistics{
+    display: flex;
+    justify-content: space-between;
+}
+
+.number{
+    display: flex;
+    flex-direction: column;
+}
+
+.number > .number-title{
+    color: var(--white);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.number > .number-subtitle{
+    color: var(--slightly-white-p);
+    font-size: .8rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: .5rem;
+    font-family: "Lexend Deca";
+}
+.text-container{
+    min-width: 50%;
+    display: flex;
+}
+.text-card{
+    max-width: 70%;
+    margin: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.img-card{
+    min-width: 50%;
+    background: url(images/image-header-desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    
+    position: relative;
+    border-radius: 0 .5rem .5rem 0 ;
+    /* filter: blur(5px); */
+}
+.img-card::before{
+    position: absolute;
+    background-color: var(--soft-violet-a);
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: 0 .5rem .5rem 0 ;
+}
+
+.attribution { 
+    background-color: var(--dark-blue);
+    color: var(--white);
+    font-size: 14px; 
+    text-align: center; 
+    margin: 2rem;
+}
+.attribution a { color: hsl(228, 68%, 65%); }
